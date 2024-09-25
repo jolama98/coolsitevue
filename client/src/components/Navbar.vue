@@ -18,10 +18,11 @@ function toggleTheme() {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-3">
+  <nav class="navbar navbar-expand-sm  px-3">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <img alt="logo" src="/img/cw-logo.png" height="45" />
+        <img alt="logo" src="https://cwcurriculum.blob.core.windows.net/fullstack/assets/img/coolsite-logo.png"
+          height="45" />
       </div>
     </router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -55,6 +56,10 @@ a:hover {
 
 .nav-link {
   text-transform: uppercase;
+}
+
+.navbar {
+  background-color: #061130;
 }
 
 .navbar-nav .router-link-exact-active {
