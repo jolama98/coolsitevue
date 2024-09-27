@@ -29,21 +29,26 @@ function toggleTheme() {
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto">
+    <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarText">
+      <ul class="navbar-nav">
         <li>
           <router-link :to="{ name: 'About' }" class="btn text-success lighten-30 selectable text-uppercase">
             About
           </router-link>
         </li>
+        <li>
+          <router-link :to="{ name: 'About' }" class="btn text-success lighten-30 selectable text-uppercase">
+            get in touch
+          </router-link>
+        </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
-      <div>
+      <!-- <div>
         <button class="btn text-light" @click="toggleTheme"
           :title="`Enable ${theme == 'light' ? 'dark' : 'light'} theme.`">
           <Icon :name="theme == 'light' ? 'weather-sunny' : 'weather-night'" />
         </button>
-      </div>
+      </div> -->
       <Login />
     </div>
   </nav>
