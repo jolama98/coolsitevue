@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
+import HomePage from './pages/HomePage.vue';
 
 </script>
 
@@ -7,8 +8,8 @@ import Navbar from './components/Navbar.vue';
   <header>
     <Navbar />
   </header>
-  <main>
-    <router-view />
+  <main class="d-flex align-items-center">
+    <HomePage />
   </main>
   <footer>
     <div class="col-12">
